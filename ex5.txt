@@ -1,0 +1,32 @@
+//حل معادله درجه دو
+
+package ex5;
+import java.math.*;
+import java.util.Scanner;
+public class Ex5 {
+	
+	public static void main(String[]args)
+	{
+		System.out.print("Enter a ,b , c :\t");
+		Scanner input = new Scanner(System.in);
+		int a , b , c ;
+		float x1 , x2 , delta;
+		a = input.nextInt();
+		b = input.nextInt();
+		c = input.nextInt();
+		
+		delta = (b*b) - 4*a*c;
+		if(delta >=0)
+		{
+		x1 = (float) ( -b + Math.sqrt(delta) ) /(2*a);
+		x2 = (float) (-b - Math.sqrt(delta)) /(2*a);
+		System.out.printf("x1 = %f , x2 = %f", x1 , x2);
+		
+		}
+		else
+			System.out.print("Error!");
+		
+		
+	}
+
+}
